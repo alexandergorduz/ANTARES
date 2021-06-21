@@ -1,0 +1,10 @@
+extern float xAcc, yAcc, zAcc;
+extern float rollRateIn, pitchRateIn, yawRateIn;
+void readIMU();
+void initIMURegs();
+void twiStart();
+void twiStop();
+void twiSend(unsigned char c);
+unsigned char twiRead();
+unsigned char twiReadLast();
+void initIMU();
